@@ -1,0 +1,60 @@
+{
+  "name": "TestPlant",
+  "tagType": "Folder",
+  "tags": [
+    {
+      "name": "Line1",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "CNC01",
+          "parameters": {
+            "MachineID": {
+              "dataType": "String",
+              "value": "CNC01"
+            }
+          },
+          "tagType": "UdtInstance",
+          "tags": [
+            {
+              "name": "Tool_Wear_Pct",
+              "tagType": "AtomicTag",
+              "value": 40.4
+            },
+            {
+              "name": "Coolant_Temp_C",
+              "tagType": "AtomicTag",
+              "value": 45.0
+            },
+            {
+              "documentation": "0 : Healthy\n1 : Chipped Tool\n2 : Worn Tool\n3 : Coolant Failure",
+              "name": "Fault_Mode",
+              "tagType": "AtomicTag",
+              "value": 3
+            },
+            {
+              "name": "Feed_Rate_Override_Pct",
+              "tagType": "AtomicTag"
+            },
+            {
+              "name": "Vibration_RMS_g",
+              "tagType": "AtomicTag",
+              "value": 0.324
+            },
+            {
+              "name": "Motor_Current_Amps",
+              "tagType": "AtomicTag",
+              "value": 14.58
+            },
+            {
+              "name": "Spindle_RPM",
+              "tagType": "AtomicTag",
+              "value": 10006.0
+            }
+          ],
+          "typeId": "CNC_Spindle"
+        }
+      ]
+    }
+  ]
+}

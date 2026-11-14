@@ -1,0 +1,72 @@
+{
+  "name": "CNC_Spindle",
+  "parameters": {
+    "MachineID": {
+      "dataType": "String",
+      "value": null
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "engHigh": 3.0,
+      "name": "Fault_Mode",
+      "tagType": "AtomicTag",
+      "value": 0,
+      "valueSource": "memory"
+    },
+    {
+      "dataType": "Float8",
+      "engHigh": 3.0,
+      "engUnit": "g",
+      "name": "Vibration_RMS_g",
+      "tagType": "AtomicTag",
+      "value": 0.35,
+      "valueSource": "memory"
+    },
+    {
+      "engUnit": "%",
+      "name": "Feed_Rate_Override_Pct",
+      "tagType": "AtomicTag",
+      "value": 100,
+      "valueSource": "memory"
+    },
+    {
+      "dataType": "Float8",
+      "engHigh": 15000.0,
+      "engUnit": "RPM",
+      "name": "Spindle_RPM",
+      "tagType": "AtomicTag",
+      "value": 10000,
+      "valueSource": "memory"
+    },
+    {
+      "dataType": "Float8",
+      "engHigh": 30.0,
+      "engUnit": "A",
+      "name": "Motor_Current_Amps",
+      "tagType": "AtomicTag",
+      "value": 14.5,
+      "valueSource": "memory"
+    },
+    {
+      "dataType": "Float8",
+      "engHigh": 50.0,
+      "engUnit": "°C",
+      "name": "Coolant_Temp_C",
+      "tagType": "AtomicTag",
+      "value": 25,
+      "valueSource": "memory"
+    },
+    {
+      "dataType": "Float8",
+      "engUnit": "%",
+      "name": "Tool_Wear_Pct",
+      "tagType": "AtomicTag",
+      "value": 0,
+      "valueSource": "memory"
+    }
+  ],
+  "tooltip": "Simulated CNC spindle: RPM, current, coolant temp, vibration, feed override, fault mode",
+  "typeId": null
+}
